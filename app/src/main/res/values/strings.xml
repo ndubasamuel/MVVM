@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">lgInMvvM</string>
+    <string name="Log_in">Login</string>
+    <string name="E_MAIL">EMAIL</string>
+    <string name="PASSWORD">PASSWORD</string>
+    <string name="Please_sign_in_to_continue">Please sign in to continue</string>
+    <string name="Create_Account">Create Account</string>
+    <string name="Full_Name">Full Name</string>
+    <string name="CONFIRM_PASSWORD">CONFIRM PASSWORD</string>
+    <string name="SIGN_UP">SIGN_UP</string>
+    <string name="Already_have_account">Already have account?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

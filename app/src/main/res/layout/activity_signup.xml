@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.SignupActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="363dp"
+        android:layout_height="175dp"
+        android:outlineAmbientShadowColor="#f5b625"
+        android:src="@drawable/top_edge"
+
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="-30dp" />
+
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/Create_Account"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:layout_margin="15dp"
+        android:hint="@string/Full_Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_logo"
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints="emailAddress"
+        android:layout_margin="15dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:hint="@string/E_MAIL"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:layout_margin="15dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:hint="@string/PASSWORD"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/et_email"
+        />
+
+    <EditText
+        android:id="@+id/et_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:layout_margin="15dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:hint="@string/CONFIRM_PASSWORD"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="141dp"
+        android:layout_height="61dp"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+        android:layout_marginTop="70dp"
+        android:text="@string/SIGN_UP"
+        android:textColor="@android:color/white"
+        app:layout_editor_absoluteY="40dp"
+        tools:layout_editor_absoluteX="255dp"
+        android:layout_marginStart="250dp"
+        app:layout_constraintTop_toBottomOf="@id/et_repassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:text="@string/Already_have_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/accessibility_action_clickable_span"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="@string/Log_in"
+        android:textSize="15sp"
+        android:textColor="#e3a74d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="250dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
